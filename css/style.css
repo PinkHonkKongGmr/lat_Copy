@@ -116,7 +116,7 @@ color: white;
 .type button
 {background: #00923f;
 color:white;border: none;
-border-radius: 5px;}
+border-radius: 5px;width:100%;}
 
 .autotype_button
 {width:300px;height:45px;background:#f48634; color: white;border-radius: 5px;font-size: 120%;margin-bottom: 20px;border-bottom: 4px solid #f76500;}
@@ -125,7 +125,26 @@ border-radius: 5px;}
 {font-size:160%;margin: 30px;font-weight: lighter;}
 
 .districts
-{background: #00923f;color: white;}
+{background: #00923f;color: white;padding: 20px;}
+
+.districts img
+{margin-right: 17px;}
+
+.districts h2
+{margin: 22px;font-size: 260%;}
+
+.districts_wrapper
+{width:86%;margin:auto;display: flex;flex-wrap: wrap;}
 
 .districts img
 {width: 100px;height: 100px;}
+
+.rounds
+{display: flex;
+align-items: center;
+min-width: 250px;
+margin-bottom: 80px;
+}
+
+.rounds div
+{text-align: left;}
