@@ -145,6 +145,24 @@ align-items: center;
 min-width: 250px;
 margin-bottom: 80px;
 }
-
 .rounds div
 {text-align: left;}
+
+.guarantees_wrapper
+{width:90%;margin:auto;display: flex;}
+
+.guarantees_item
+{text-align:left;position: relative;}
+
+.guarantees_item:nth-child(1)::after,.guarantees_item:nth-child(2)::after
+{background: #f76500;position: absolute;
+content: '';width: 50%;left: 20%;bottom: 0;height:1px;}
+
+.img_box
+{width:40%;}
+
+
+.img_box img
+{width:100%;}
+.items
+{width:60%;}
