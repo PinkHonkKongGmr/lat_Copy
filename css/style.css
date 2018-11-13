@@ -48,15 +48,28 @@ background: white;
 .fixed-hat_items ul li button i
 {color: white;position: absolute;left:10px;top:12px;}
 
+.centraliation
+{
+  text-align: center;
+}
+
 .order_form
-{text-align: center;
+{
+
 padding-top: 180px;
 color: white;
     background-image: url(http://land.lat.spb.ru/wp-content/uploads/2018/02/back_eva.png);
+    background-size: cover;
 }
 
 .order_form h1
 {font-size: 500%;font-weight: bolder;margin-bottom: 20px;}
+
+.order_form h3
+{margin-top: 20px;padding-bottom: 80px;}
+
+.order_form h3 p
+{margin-top: 20px;margin-bottom: 20px;font-size: 190%;font-weight: bold;letter-spacing:1.5px;}
 
 .order_form input,.order_form button
 {
@@ -66,13 +79,39 @@ color: white;
   border: none;
   margin-right: 15px;
   border-radius: 5px;
+  font-size: 130%
 }
 
 .order_form input
-{padding-left: 50px;font-size: 120%;color: grey;}
+{padding-left: 50px;;color: grey;}
 
 .order_form button
 {
-  background: orange;
+  background: #f48634;
   color:white;
 }
+
+.auto_type
+{padding-top: 30px;width: 100%;}
+
+.type_wrapper
+{display: flex;margin: auto;width: 100%;justify-content: space-around;}
+
+.auto_type h3
+{margin-bottom: 20px;font-size: 220%;}
+
+.type
+{display: flex;flex-direction: column;}
+
+.type img
+{margin-top: 20px;margin-bottom: 20px;}
+
+.type h5
+{
+  font-weight: bolder;font-size: 180%;
+}
+
+.type button
+{background: #00923f;
+color:white;border: none;
+border-radius: 5px;}
