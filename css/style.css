@@ -242,3 +242,39 @@ content: '';width: 50%;left: 20%;bottom: -15px;height:1px;}
 
 .opinions_item article span
 {position: absolute;font-weight: bold;bottom: 17px; left:58px;}
+
+.stock
+{padding-left: 38%;margin-top: 29px;background-image: url("http://land.lat.spb.ru/wp-content/uploads/2018/02/specp.png");color: white;background-size:cover;
+padding-top: 40px;
+}
+
+.promo h2
+{font-size: 230%;margin-bottom: 30px;}
+
+.promo h3
+{font-size: 370%;margin-bottom: 30px;
+}
+
+.promo p
+{font-size: 180%;}
+
+.promo button
+{width:246px;
+height: 41px;
+color: white;
+border-radius: 5px;
+background: #00923f;
+border: none;
+margin-bottom: 18px;}
+
+.promo
+{padding-bottom: 80px;}
+
+.bordertopWhite
+{border-top:2px solid white!important;}
+
+.borderbottomGreen
+{border-bottom: 2px solid #007f36!important;}
+
+.borderbottomOrange
+{border-bottom: 2px solid orange!important;}
