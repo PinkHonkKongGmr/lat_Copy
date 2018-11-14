@@ -206,7 +206,7 @@ content: '';width: 50%;left: 20%;bottom: -15px;height:1px;}
 .people
 {font-size: 120%;width: 100%;padding: 17px;background-image: url(http://land.lat.spb.ru/wp-content/uploads/2018/02/people_back.png);background-size: cover;color: white;margin-top: 20px;}
 
-.people h2,.opinions h2
+.people h2,.opinions h2,.faq h2
 {padding:20px 0;}
 .people button
 {background: #f47421;margin-bottom: 35px;}
@@ -270,6 +270,8 @@ margin-bottom: 18px;}
 .promo
 {padding-bottom: 80px;}
 
+
+
 .bordertopWhite
 {border-top:2px solid white!important;}
 
@@ -278,3 +280,35 @@ margin-bottom: 18px;}
 
 .borderbottomOrange
 {border-bottom: 2px solid orange!important;}
+
+.faq_wrapper
+{display: flex;width: 97%;margin: auto;}
+
+.faq_wrapper ul
+{width: 50%;}
+
+.faq_wrapper ul li
+{
+  padding:10px;
+  position: relative;
+  text-align: left;
+  font-size: 130%;
+
+
+}
+
+.faq_wrapper ul li::after
+{position: absolute;
+content: '';
+opacity: 0.3;
+background: grey;
+bottom: -5px;width: 100%;height: 2px;left: 0;}
+
+.toggler
+{width: 30px;height: 30px;background: grey;text-align: center;display: inline-block;margin-right: 10px;}
+
+.info
+{display: none;}
+
+.faq_wrapper. li .fa-minus
+{display: none!;}
