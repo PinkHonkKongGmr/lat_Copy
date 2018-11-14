@@ -232,10 +232,13 @@ content: '';width: 50%;left: 20%;bottom: -15px;height:1px;}
 {border-right: 4px solid #00923f;}
 
 .opinions_item article
-{padding: 10px;text-align: left;}
+{padding: 10px;text-align: left;position: relative;}
 
 .opinions_item article p
-{font-style:oblique;}
+{font-style:oblique;margin-bottom: 30px;}
 
 .opinions_item article h3
 {margin-bottom: 35px;}
+
+.opinions_item article span
+{position: absolute;font-weight: bold;bottom: 17px; left:58px;}
