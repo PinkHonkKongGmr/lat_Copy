@@ -1,3 +1,6 @@
+ul
+{list-style: none;}
+
 .fixed-hat
 {padding:1% 3%;position: fixed;display: flex;width: 100%;box-sizing:border-box;background: white;z-index: 5;}
 
@@ -8,7 +11,7 @@
 {width:35%;display:flex;justify-content: space-between;margin-right: 5%;}
 
 .fixed-hat_items ul
-{list-style: none;display: flex;justify-content: space-around;width: 100%;box-sizing:border-box;align-items: center;}
+{display: flex;justify-content: space-around;width: 100%;box-sizing:border-box;align-items: center;}
 
 .fixed-hat_items ul li a
 {text-decoration:none;color: inherit;position: relative;}
@@ -197,8 +200,42 @@ content: '';width: 50%;left: 20%;bottom: -15px;height:1px;}
 .img_box .map
 {width:135%;}
 
-.statistic button
+.statistic button,.people button
 {width:230px;height: 46px;background:#42aa6b;border-radius:5px;border: none;color: white;font-size: 120%;}
 
 .people
-{width: 100;text-align: right;}
+{font-size: 120%;width: 100%;padding: 17px;background-image: url(http://land.lat.spb.ru/wp-content/uploads/2018/02/people_back.png);background-size: cover;color: white;margin-top: 20px;}
+
+.people h2,.opinions h2
+{padding:20px 0;}
+.people button
+{background: #f47421;margin-bottom: 35px;}
+
+.people li
+{margin-bottom: 15px;position: relative;}
+.people_item
+{margin-left: 53%;}
+
+.mark
+{position: absolute;background: none;left: -40px;top:-2px;}
+
+.opinions
+{text-align: center;}
+
+.opinions_item
+{display: flex;width: 85%;margin: auto;box-shadow: 0 0 10px grey;margin-bottom: 20px;}
+
+.opinions_item:nth-child(even)
+{border-left: 4px solid #00923f;}
+
+.opinions_item:nth-child(odd)
+{border-right: 4px solid #00923f;}
+
+.opinions_item article
+{padding: 10px;text-align: left;}
+
+.opinions_item article p
+{font-style:oblique;}
+
+.opinions_item article h3
+{margin-bottom: 35px;}
