@@ -5,6 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ЛАТ</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel='stylesheet' href='css/style.css'>
 
@@ -14,48 +22,48 @@
 
 <body>
 
-<div class="fixed-hat">
-  <div class="fixed-hat_logo">
-<div class="logo">
-  <img src="https://land.lat.spb.ru/wp-content/uploads/2018/02/logo_lat.png"  alt="ЛАТ Logo">
-</div>
-    <div class="discription">
-      <p>Техпомощь на дорогах круглосуточно<br>подача 15 минут в Санкт-Петербурге</p>
+  <div class="fixed-hat">
+    <div class="fixed-hat_logo">
+      <div class="logo">
+        <img src="https://land.lat.spb.ru/wp-content/uploads/2018/02/logo_lat.png" alt="ЛАТ Logo">
+      </div>
+      <div class="discription">
+        <p>Техпомощь на дорогах круглосуточно<br>подача 15 минут в Санкт-Петербурге</p>
+      </div>
+    </div>
+
+    <div class="fixed-hat_items">
+      <ul>
+        <li>
+          <a href="#">Работаем круглосуточно 24/7</a>
+        </li>
+        <li>
+          <a href="#">+7 (812) 426-72-89</a>
+        </li>
+        <li>
+          <button type="button" name="button"><i class="fa fa-phone" aria-hidden="true"></i>Заказать эвакуатор</button>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <div class="fixed-hat_items">
-    <ul>
-      <li>
-        <a href="#">Работаем круглосуточно 24/7</a>
-      </li>
-      <li>
-        <a href="#">+7 (812) 426-72-89</a>
-      </li>
-      <li>
-        <button type="button" name="button"><i class="fa fa-phone" aria-hidden="true"></i>Заказать эвакуатор</button>
-      </li>
-    </ul>
-  </div>
-</div>
+  <div class="order_form centraliation">
 
-<div class="order_form centraliation">
-
-  <h1>Срочный вызов эвакуатора
+    <h1>Срочный вызов эвакуатора
 в Санкт-Петербурге</h1>
 
-<h2>Подача от 15 минут в пределах КАД. Цена от 1500 рублей<br>
+    <h2>Подача от 15 минут в пределах КАД. Цена от 1500 рублей<br>
 Введите Ваш номер телефона</h2>
 
 
-<form class="" action="index.html" method="post">
+    <form class="" action="index.html" method="post">
 
-  <input type="text" name="" value="" class="phone" placeholder="8(___) ___-__-__">
-  <button type="button" name="button">Вызвать эвакуатор</button>
+      <input type="text" name="" value="" class="phone" placeholder="8(___) ___-__-__">
+      <button type="button" name="button">Вызвать эвакуатор</button>
 
-</form>
+    </form>
 
-<h3>
+    <h3>
   или позвоните по номеру:
 
   <p>+7 (812) 426-72-88</p>
@@ -63,352 +71,370 @@
   круглосуточно
 
 </h3>
-</div>
-
-<div class="auto_type centraliation">
-
-  <h3>Выберите вид автомобиля:</h3>
-
-<div class="type_wrapper">
-
-  <div class="type">
-<h4>Легковой автомобиль</h4>
-<img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/legkovoy.png" alt="none">
-
-<h5>от 1 500 руб</h5>
-    <button type="button" name="button">Заказать</button>
   </div>
 
-  <div class="type">
-<h4>Внедорожник</h4>
-<img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/vnedorogi.png" alt="none">
-<h5>от 1 500 руб</h5>
-    <button type="button" name="button">Заказать</button>
-  </div>
+  <div class="auto_type centraliation">
 
-  <div class="type">
-<h4>Грузовой автомобиль</h4>
-<img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/gruzovoy.png" alt="none">
-<h5>от 2 500 руб</h5>
-    <button type="button" name="button">Заказать</button>
-  </div>
+    <h3>Выберите вид автомобиля:</h3>
 
-  <div class="type">
-<h4>Спецтехника</h4>
-<img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/spec.png" alt="none">
-<h5>от 2 200 руб</h5>
-    <button type="button" name="button">Заказать</button>
-  </div>
-</div>
-  <h6>Не нашли своего варианта? Укажите другой!</h6>
+    <div class="type_wrapper">
 
-  <button type="button" name="button" class="autotype_button">Выбрать другой вариант</button>
-</div>
+      <div class="type">
+        <h4>Легковой автомобиль</h4>
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/legkovoy.png" alt="none">
 
-<div class="districts centraliation">
+        <h5>от 1 500 руб</h5>
+        <button type="button" name="button">Заказать</button>
+      </div>
 
-  <h2>50 эвакуаторов во всех районах города</h2>
+      <div class="type">
+        <h4>Внедорожник</h4>
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/vnedorogi.png" alt="none">
+        <h5>от 1 500 руб</h5>
+        <button type="button" name="button">Заказать</button>
+      </div>
 
-  <div class="districts_wrapper">
+      <div class="type">
+        <h4>Грузовой автомобиль</h4>
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/gruzovoy.png" alt="none">
+        <h5>от 2 500 руб</h5>
+        <button type="button" name="button">Заказать</button>
+      </div>
 
-  <div class="rounds">
-    <div class="">
-      <img src="http://land.lat.spb.ru/wp-content/uploads/2018/07/26.png" alt="">
+      <div class="type">
+        <h4>Спецтехника</h4>
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/spec.png" alt="none">
+        <h5>от 2 200 руб</h5>
+        <button type="button" name="button">Заказать</button>
+      </div>
     </div>
-  <div>  лет эвакуируем<br>
-автомобили</div>
+    <h6>Не нашли своего варианта? Укажите другой!</h6>
+
+    <button type="button" name="button" class="autotype_button">Выбрать другой вариант</button>
   </div>
 
-<div class="rounds">
-    <img src="http://land.lat.spb.ru/wp-content/uploads/2018/07/247-1-150x150.png" alt="">
-<div>
-  работаем<br>
-круглосуточно</div>
-</div>
+  <div class="districts centraliation">
 
-<div class="rounds">
-    <img src="http://land.lat.spb.ru/wp-content/uploads/2018/07/15-150x150.png" alt="">
-<div>
-миллиона<br>
-эвакуаций</div>
-</div>
-  </div>
+    <h2>50 эвакуаторов во всех районах города</h2>
 
-</div>
+    <div class="districts_wrapper">
 
-<div class="guarantees centraliation">
+      <div class="rounds">
+        <div class="">
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/07/26.png" alt="">
+        </div>
+        <div> лет эвакуируем<br> автомобили
+        </div>
+      </div>
 
-  <h2>Гарантии</h2>
+      <div class="rounds">
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/07/247-1-150x150.png" alt="">
+        <div>
+          работаем<br> круглосуточно
+        </div>
+      </div>
 
-<div class="guarantees_wrapper">
-    <div class="img_box">
-      <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/garant.png" alt="">
+      <div class="rounds">
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/07/15-150x150.png" alt="">
+        <div>
+          миллиона<br> эвакуаций
+        </div>
+      </div>
     </div>
-<div class="guarantees_items">
-
-  <div class="guarantees_item">
-<h2>Все работы по эвакуации застрахованы</h2>
-<p>Автомобилисту предоставляются документы для возмещения
-расходов на эвакуацию в страховой компании</p>
-  </div>
-
-  <div class="guarantees_item">
-
-    <h2>Работаем со страховыми компаниями:</h2>
-<img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/vsk.png" alt="">
-<img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/renesans.png" alt="">
-<img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/rosgostrax.png" alt="">
-  </div>
-
-  <div class="guarantees_item">
-    <h2>Нам доверяют:</h2>
-
-    <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/pepsi.png" alt="">
-    <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/coca.png" alt="">
-    <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/vtb.png" alt="">
-    <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/cezar.png" alt="">
-    <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/baltika.png" alt="">
 
   </div>
 
-</div>
-</div>
-<div class="guarantees_wrapper">
+  <div class="guarantees centraliation">
 
-<div class="statistic">
+    <h2>Гарантии</h2>
 
-<p>
-  <span>1 500 000</span> клиентов за 26 лет работы<br>
-<span>1000</span> сотрудников в РФ<br>
-<span>100 </span>представительств<br>
-</p>
-<p>
-—  3 000 000 успешных заказов<br>
-— 10 500  положительных отзывов<br>
-— 50 эвакуаторов
-</p>
-<button type="button" name="button">Заказать эвакуатор</button>
-</div>
-<div class="img_box">
-  <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/map_lat-1024x496.png" alt="" class="map">
-</div>
-</div>
-</div>
+    <div class="guarantees_wrapper">
+      <div class="img_box">
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/garant.png" alt="">
+      </div>
+      <div class="guarantees_items">
 
-<div class="people">
+        <div class="guarantees_item">
+          <h2>Все работы по эвакуации застрахованы</h2>
+          <p>Автомобилисту предоставляются документы для возмещения расходов на эвакуацию в страховой компании</p>
+        </div>
 
-<div class="people_item">
+        <div class="guarantees_item">
 
-  <h2>ЛАТ — это, прежде всего, люди!</h2>
+          <h2>Работаем со страховыми компаниями:</h2>
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/vsk.png" alt="">
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/renesans.png" alt="">
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/rosgostrax.png" alt="">
+        </div>
 
-  <p>Жесткий отбор позволяет нам строить команду<br>
-из настоящих профессионалов своего дела!<br>
-Каждый водитель круглогодично учится в «ЛАТ»<br>
-и дважды в год сдает экзамен</p>
+        <div class="guarantees_item">
+          <h2>Нам доверяют:</h2>
 
-<ul>
-  <li>Заботливые водители эвакуаторов<br>
-помогут в сложной ситуации
-<div class="mark">
-<i class="fa fa-check" aria-hidden="true"></i>
-</div>
-</li>
-  <li>Опытные сотрудники с многолетним стажем
-    <div class="mark">
-<i class="fa fa-check" aria-hidden="true"></i>
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/pepsi.png" alt="">
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/coca.png" alt="">
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/vtb.png" alt="">
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/cezar.png" alt="">
+          <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/baltika.png" alt="">
+
+        </div>
+
+      </div>
     </div>
-  </li>
-  <li>Водитель поможет Вам — он знает, что делать
-    <div class="mark">
-<i class="fa fa-check" aria-hidden="true"></i>
+    <div class="guarantees_wrapper">
+
+      <div class="statistic">
+
+        <p>
+          <span>1 500 000</span> клиентов за 26 лет работы<br>
+          <span>1000</span> сотрудников в РФ<br>
+          <span>100 </span>представительств<br>
+        </p>
+        <p>
+          — 3 000 000 успешных заказов<br> — 10 500 положительных отзывов<br> — 50 эвакуаторов
+        </p>
+        <button type="button" name="button">Заказать эвакуатор</button>
+      </div>
+      <div class="img_box">
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/map_lat-1024x496.png" alt="" class="map">
+      </div>
     </div>
-  </li>
-</ul>
-<button type="button" name="button" class="bordertopWhite borderbottomOrange">Заказать эвакуатор</button>
-</div>
-</div>
-
-<div class="opinions">
-
-  <h2>Отзывы</h2>
-
-  <div class="opinions_item">
-<div class="opinions_item_img">
-  <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/otz1.png" alt="">
-</div>
-
-<article class="">
-  <h3>Эвакуация после ДТП</h3>
-<p>  Спасибо за профессиональную доставку автомобиля после ДТП.
-  Водитель Дмитрий. Приятно было наблюдать за работой настоящего профи.
-  В нереально узком месте, снял аварийный автомобиль с платформы,
-  и с помощью системы блоков поставил в гараж.</p>
-
-  <span>Сергей</span>
-</article>
   </div>
 
-  <div class="opinions_item">
+  <div class="people">
 
-<article class="">
-  <h3>Эвакуация после ДТП</h3>
-<p>  Спасибо за профессиональную доставку автомобиля после ДТП.
-  Водитель Дмитрий. Приятно было наблюдать за работой настоящего профи.
-  В нереально узком месте, снял аварийный автомобиль с платформы,
-  и с помощью системы блоков поставил в гараж.</p>
+    <div class="people_item">
 
-  <span>Сергей</span>
-</article>
+      <h2>ЛАТ — это, прежде всего, люди!</h2>
 
-<div class="opinions_item_img">
-  <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/otz2.png" alt="">
-</div>
+      <p>Жесткий отбор позволяет нам строить команду<br> из настоящих профессионалов своего дела!<br> Каждый водитель круглогодично учится в «ЛАТ»<br> и дважды в год сдает экзамен</p>
 
+      <ul>
+        <li>Заботливые водители эвакуаторов<br> помогут в сложной ситуации
+          <div class="mark">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+        </li>
+        <li>Опытные сотрудники с многолетним стажем
+          <div class="mark">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+        </li>
+        <li>Водитель поможет Вам — он знает, что делать
+          <div class="mark">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </div>
+        </li>
+      </ul>
+      <button type="button" name="button" class="bordertopWhite borderbottomOrange">Заказать эвакуатор</button>
+    </div>
   </div>
 
+  <div class="opinions">
 
-  <div class="opinions_item">
-<div class="opinions_item_img">
-  <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/otz4.png" alt="">
-</div>
+    <h2>Отзывы</h2>
 
-<article class="">
-  <h3>Эвакуация после ДТП</h3>
-<p>  Спасибо за профессиональную доставку автомобиля после ДТП.
-  Водитель Дмитрий. Приятно было наблюдать за работой настоящего профи.
-  В нереально узком месте, снял аварийный автомобиль с платформы,
-  и с помощью системы блоков поставил в гараж.</p>
+    <div class="opinions_item">
+      <div class="opinions_item_img">
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/otz1.png" alt="">
+      </div>
 
-  <span>Сергей</span>
-</article>
+      <article class="">
+        <h3>Эвакуация после ДТП</h3>
+        <p> Спасибо за профессиональную доставку автомобиля после ДТП. Водитель Дмитрий. Приятно было наблюдать за работой настоящего профи. В нереально узком месте, снял аварийный автомобиль с платформы, и с помощью системы блоков поставил в гараж.</p>
+
+        <span>Сергей</span>
+      </article>
+    </div>
+
+    <div class="opinions_item">
+
+      <article class="">
+        <h3>Эвакуация после ДТП</h3>
+        <p> Спасибо за профессиональную доставку автомобиля после ДТП. Водитель Дмитрий. Приятно было наблюдать за работой настоящего профи. В нереально узком месте, снял аварийный автомобиль с платформы, и с помощью системы блоков поставил в гараж.</p>
+
+        <span>Сергей</span>
+      </article>
+
+      <div class="opinions_item_img">
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/otz2.png" alt="">
+      </div>
+
+    </div>
+
+
+    <div class="opinions_item">
+      <div class="opinions_item_img">
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/otz4.png" alt="">
+      </div>
+
+      <article class="">
+        <h3>Эвакуация после ДТП</h3>
+        <p> Спасибо за профессиональную доставку автомобиля после ДТП. Водитель Дмитрий. Приятно было наблюдать за работой настоящего профи. В нереально узком месте, снял аварийный автомобиль с платформы, и с помощью системы блоков поставил в гараж.</p>
+
+        <span>Сергей</span>
+      </article>
+    </div>
+
+
+    <div class="opinions_item">
+
+
+      <article class="">
+        <h3>Эвакуация после ДТП</h3>
+        <p> Спасибо за профессиональную доставку автомобиля после ДТП. Водитель Дмитрий. Приятно было наблюдать за работой настоящего профи. В нереально узком месте, снял аварийный автомобиль с платформы, и с помощью системы блоков поставил в гараж.</p>
+
+        <span>Сергей</span>
+      </article>
+
+      <div class="opinions_item_img">
+        <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/otz3.png" alt="">
+      </div>
+    </div>
   </div>
 
+  <div class="stock">
 
-  <div class="opinions_item">
+    <div class="promo">
 
+      <h2>СПЕЦПРЕДЛОЖЕНИЕ</h2>
 
-<article class="">
-  <h3>Эвакуация после ДТП</h3>
-<p>  Спасибо за профессиональную доставку автомобиля после ДТП.
-  Водитель Дмитрий. Приятно было наблюдать за работой настоящего профи.
-  В нереально узком месте, снял аварийный автомобиль с платформы,
-  и с помощью системы блоков поставил в гараж.</p>
-
-  <span>Сергей</span>
-</article>
-
-<div class="opinions_item_img">
-  <img src="http://land.lat.spb.ru/wp-content/uploads/2018/02/otz3.png" alt="">
-</div>
-  </div>
-</div>
-
-<div class="stock">
-
-  <div class="promo">
-
-    <h2>СПЕЦПРЕДЛОЖЕНИЕ</h2>
-
-    <h3>БЕСПЛАТНАЯ ПОДАЧА<br>
+      <h3>БЕСПЛАТНАЯ ПОДАЧА<br>
   ЭВАКУАТОРА</h3>
 
-  <p>В ноябре, при заказе эвакуатора в пределах КАД,<br>
-  подача эвакуатора — бесплатно</p>
+      <p>В ноябре, при заказе эвакуатора в пределах КАД,<br> подача эвакуатора — бесплатно</p>
 
-  <button type="button" name="button" class="bordertopWhite borderbottomGreen">Получить промокод</button> <br>
+      <button type="button" name="button" class="bordertopWhite borderbottomGreen">Получить промокод</button> <br>
 
-  <span>* Обязательно сообщите промокод при заказе услуги!</span>
+      <span>* Обязательно сообщите промокод при заказе услуги!</span>
+    </div>
   </div>
-</div>
 
-<div class="faq centraliation">
-  <h2>Часто задаваемые вопросы</h2>
-
-
-  <div class="faq_wrapper">
-
-    <ul>
+  <div class="faq centraliation">
+    <h2>Часто задаваемые вопросы</h2>
 
 
-      <li>
-        <div class="toggler"><div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div> <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div></div>Почему нельзя экономить на эвакуации?
-        <div class="info">
-          При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса.
-А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+    <div class="faq_wrapper">
 
-        </div>
-      </li>
-      <li>
-        <div class="toggler"><div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div> <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div></div>Будет ли предоставлен чек после оказания услуги?
+      <ul>
+
+
+        <li>
+          <div class="toggler">
+            <div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+          </div>
+          <div class="question">  Почему нельзя экономить на эвакуации?</div>
           <div class="info">
-            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса.
-  А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса. А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости
+            услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
 
           </div>
-      </li>
+        </li>
+        <li>
+          <div class="toggler">
+            <div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+          </div>
+          <div class="question">Будет ли предоставлен чек после оказания услуги?</div>
+          <div class="info">
+            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса. А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости
+            услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+
+          </div>
+        </li>
 
 
-      <li>
-        <div class="toggler"><div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div> <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div></div>Как определить: нужна эвакуация или техпомощь на дороге?<div class="info">
-          При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса.
-А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+        <li>
+          <div class="toggler">
+            <div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+          </div>
+          <div class="question">Как определить: нужна эвакуация или техпомощь на дороге?</div>
+          <div class="info">
+            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса. А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости
+            услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
 
-        </div>
-      </li>
-
-
-      <li><div class="toggler"><div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div> <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div></div>При поездке за территорию КАД нужна ли будет доплата?
-
-        <div class="info">
-          При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса.
-А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
-
-        </div>
-      </li>
-    </ul>
-    <ul>
+          </div>
+        </li>
 
 
-      <li><div class="toggler"><div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div> <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div></div>Какие документы будут необходимы для перевозки?
-        <div class="info">
-          При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса.
-А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+        <li>
+          <div class="toggler">
+            <div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+          </div>
+          <div class="question">При поездке за территорию КАД нужна ли будет доплата?</div>
 
-        </div>
-      </li>
-      <li><div class="toggler"><div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div> <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div></div>Зачем нужен манипулятор?
-        <div class="info">
-          При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса.
-А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+          <div class="info">
+            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса. А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости
+            услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
 
-        </div>
-      </li>
-      <li><div class="toggler"><div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div> <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div></div>Есть ли разница в тарифах в зависимости от времени суток?
-        <div class="info">
-          При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса.
-А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+          </div>
+        </li>
+      </ul>
+      <ul>
 
-        </div>
-      </li>
-      <li><div class="toggler"><div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div> <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div></div>Можно ли заказать эвакуатор с выездом в Москву или в другие города России?
-        <div class="info">
-          При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса.
-А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
 
-        </div>
-      </li>
+        <li>
+          <div class="toggler">
+            <div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+          </div>
+          <div class="question">Какие документы будут необходимы для перевозки?</div>
+          <div class="info">
+            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса. А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости
+            услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
 
-    </ul>
+          </div>
+        </li>
+        <li>
+          <div class="toggler">
+            <div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+          </div>
+          <div class="question">Зачем нужен манипулятор?</div>
+          <div class="info">
+            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса. А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости
+            услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+
+          </div>
+        </li>
+        <li>
+          <div class="toggler">
+            <div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+          </div>
+          <div class="question">Есть ли разница в тарифах в зависимости от времени суток?
+          <div class="info">
+            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса. А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости
+            услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+
+          </div>
+        </li>
+        <li>
+          <div class="toggler">
+            <div class=" plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class=" minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+          </div>
+          <div class="question">Можно ли заказать эвакуатор с выездом в Москву или в другие города России?</div>
+          <div class="info">
+            При экономии на данной услуге, Вы можете потерять больше времени, денег, приобрести дополнительные проблемы с автомобилем, а так же Вам не предоставят должного уровня сервиса. А главное, Вам никто не даст гарантий по безопасной перевозке. При стоимости
+            услуги до 1500 рублей, работы не могут быть застрахованы, и Вы сами несете определенный риск.
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
 
   </div>
-
-
-</div>
 
 
 
   <!-- <script src="js\main.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 
   <script src="https://use.fontawesome.com/550105d68c.js"></script>
   <script src="js\phone.js"></script>
