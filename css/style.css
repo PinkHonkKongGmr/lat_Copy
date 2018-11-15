@@ -481,13 +481,16 @@ ul {
 }
 
 .toggler {
-  width: 30px;
+  min-width: 30px;
   height: 30px;
   background: grey;
   text-align: center;
-  display: inline-block;
+
   margin-right: 10px;
 }
+
+.questionBlock
+{display:flex;}
 
 .question {
   display: inline-block;
@@ -503,8 +506,29 @@ ul {
 
 .itsgreen {
   background: #00923f;
+  margin-bottom: 20px;
 }
 
 .fontGreen {
   color: #00923f
 }
+
+.info
+{margin-bottom: 20px;}
+
+footer
+{position: relative;}
+
+.upbutton
+{position: fixed;
+top:200px;
+right:100px;
+background: #121517;
+padding: 3px 5px;
+color:white;
+font-size: 80%;
+}
+
+.hide
+{display: none;
+  opacity: 0;}
