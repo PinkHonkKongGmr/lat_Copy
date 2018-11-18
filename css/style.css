@@ -279,6 +279,7 @@ ul {
 
 .img_box img {
   width: 100%;
+  
 }
 
 .guarantees_items {
@@ -485,12 +486,12 @@ ul {
   height: 30px;
   background: grey;
   text-align: center;
-
   margin-right: 10px;
 }
 
-.questionBlock
-{display:flex;}
+.questionBlock {
+  display: flex;
+}
 
 .question {
   display: inline-block;
@@ -513,22 +514,128 @@ ul {
   color: #00923f
 }
 
-.info
-{margin-bottom: 20px;}
-
-footer
-{position: relative;}
-
-.upbutton
-{position: fixed;
-top:200px;
-right:100px;
-background: #121517;
-padding: 3px 5px;
-color:white;
-font-size: 80%;
+.info {
+  margin-bottom: 20px;
 }
 
-.hide
-{display: none;
-  opacity: 0;}
+
+
+
+
+.hide {
+  display: none;
+  opacity: 0;
+}
+
+.faq h3 {
+  font-size: 170%;
+  padding: 20px;
+  font-weight: normal;
+}
+
+.faq button {
+  width: 210px;
+  height: 44px;
+  border: 0;
+  border-radius: 5px;
+  background: #f58634;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 120%;
+}
+
+.pre-footer_nav {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.pre-footer_nav::before {
+  position: absolute;
+  content: '';
+  opacity: 0.3;
+  background: grey;
+  top: -12px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+}
+
+.pre-footer_nav li a {
+  opacity: 0.6;
+  color: grey;
+  font-size: 140%;
+}
+
+.pre-footer_nav li a:hover {
+  opacity: 0.8;
+  color: #1d9150;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 80%;
+  background: #363839;
+  position: relative;
+}
+
+.footerblock {
+  margin: 25px auto;
+  color:white;
+}
+
+.upbutton {
+  position: fixed;
+  bottom: 265px;
+  font-size: 140%;
+  right: 100px;
+  background: #363839;
+  padding: 3px 5px;
+  color: white;
+  font-size: 80%;
+}
+
+.upbutton:hover
+{background: #1d9150;}
+
+@media screen and (max-width: 1200px) {
+body{
+  font-size: 12px;
+}
+
+.fixed-hat
+{flex-wrap: wrap;}
+
+.fixed-hat_items
+{width: 100%;}
+
+.fixed-hat_logo
+{justify-content: space-between;width: auto;margin: auto;margin-bottom: 30px}
+
+.discription
+{margin-left: 30px;padding-top: 15px;}
+
+.type_wrapper
+{flex-wrap: wrap;}
+
+.guarantees_wrapper
+{flex-wrap: wrap;}
+}
+
+@media screen and (max-width: 1200px) {
+
+  .guarantees
+  {font-size: 16px;}
+
+.guarantees .img_box
+{width:60%;margin: auto;}
+
+.guarantees_items
+{width: auto;margin: auto;}
+
+.guarantees_item
+{justify-content: space-around;}
+
+}

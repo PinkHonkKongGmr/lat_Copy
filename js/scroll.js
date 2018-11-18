@@ -5,7 +5,7 @@ var thisPoint;
 
 function WhatIsVisible(vis) {
 
-  upbutton.classList.remove('hide');
+
   if (vis == 1) {
     back.classList.add('hide');
     up.classList.remove('hide');
@@ -21,6 +21,7 @@ WhatIsVisible(1);
 
 window.onscroll = function() {
   if (window.pageYOffset > 500) {
+    upbutton.classList.remove('hide');
     check = 0;
     WhatIsVisible(1);
 
