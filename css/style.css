@@ -259,7 +259,7 @@ ul {
   text-align: left;
   position: relative;
   z-index: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .guarantees_item:nth-child(1)::after, .guarantees_item:nth-child(2)::after {
@@ -270,6 +270,14 @@ ul {
   left: 20%;
   bottom: -15px;
   height: 1px;
+}
+
+.guarantees_item h2 {
+  margin-bottom: 24px;
+}
+
+.guarantees_item img {
+  margin-bottom: 21px;
 }
 
 .img_box, .statistic {
@@ -646,10 +654,57 @@ footer {
     width: 23px;
     height: 23px;
   }
+  .order_form h2 {
+    font-size: 150%;
+  }
+}
 
-  .order_form h2
-  {font-size: 150%;}
-
+@media screen and (max-width: 800px) {
+  .guarantees_item p {
+    font-size: 120%;
+    padding-bottom: 15px;
+  }
+  .statistic {
+    width: auto;
+    line-height: 1.6;
+  }
+  .type {
+    margin-bottom: 18px;
+  }
+  .statistic p:nth-child(1) {
+    font-size: 180%;
+  }
+  .statistic p:nth-child(2) {
+    font-size: 155%;
+  }
+  .map {
+    margin-bottom: 30px;
+  }
+  .faq_wrapper {
+    display: block;
+  }
+  .stock {
+    background-position: -110px 0;
+  }
+  .faq_wrapper ul {
+    width: auto;
+    text-align: left;
+  }
+  .faq_wrapper ul li {
+    width: auto;
+    min-width: 50%;
+    display: inline-block;
+  }
+  .faq_wrapper ul:nth-child(1) {
+    margin-bottom: auto;
+  }
+  .faq_wrapper ul li::after {
+    opacity: 0.2;
+    background: grey;
+  }
+  footer {
+    font-size: 70%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -669,10 +724,44 @@ footer {
   .opinions_item_img img {
     width: 100%;
   }
-  .faq_wrapper {
-    display: block;
+  .order_form h1 {
+    font-size: 80%;
   }
-  .faq_wrapper ul {
-    width: auto;
+  .order_form h3 {
+    font-size: 80%;
   }
+  .order_form h3 {
+    font-size: 80%;
+  }
+  .people_item {
+    margin-left: 3%;
+  }
+  .people {
+    background-position: -31% 0;
+  }
+  .stock {
+    padding-left: 3%;
+    background-position: 40% 0;
+  }
+  .promo h3 {
+    font-size: 200%;
+  }
+  .promo p {
+    font-size: 120%;
+  }
+  .pre-footer_nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .pre-footer_nav li a {
+    opacity: 0.9;
+    font-size: 140%;
+  }
+
+  footer
+  {flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+
 }
