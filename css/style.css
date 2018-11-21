@@ -610,6 +610,7 @@ footer {
   }
   .fixed-hat {
     flex-wrap: wrap;
+    position: relative;
   }
   .fixed-hat_items {
     width: 100%;
@@ -711,9 +712,22 @@ footer {
   .fixed-hat_logo, .fixed-hat_items ul {
     display: block;
   }
+.fixed-hat_logo
+{margin-bottom: 5px;}
+
+  .fixed-hat_items
+  {
+    display: none;
+  }
   .fixed-hat_items ul li {
     margin-bottom: 24.5px;
   }
+
+  .fixed-hat_items ul li a::after {
+    bottom: 16px;
+
+  }
+
   .opinions_item {
     flex-wrap: wrap;
     width: auto;
@@ -759,8 +773,9 @@ footer {
   }
 
   footer
-  {flex-wrap: wrap;
+  {
     flex-direction: column;
+    justify-content: space-between;
   }
 
 
