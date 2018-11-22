@@ -1,17 +1,20 @@
-var humburger = document.querySelector('.humburger');
-
-var line1 = document.querySelector('.ln1');
-var line2 = document.querySelector('.ln2');
-var line3 = document.querySelector('.ln3');
+var humburger = document.querySelectorAll('.humburger');
 
 
-function humburgerToggle() {
+var line1 = document.querySelectorAll('.ln1');
+var line2 = document.querySelectorAll('.ln2');
+var line3 = document.querySelectorAll('.ln3');
 
-  line1.classList.toggle('cross');
-  line2.classList.toggle('hide');
-  line3.classList.toggle('cross2');
+var tohide= document.querySelectorAll('.displayResolutionHide')
+
+
+
+for (let i = 0; i < humburger.length; i++) {
+  humburger[i].addEventListener('click',function humburgerToggle() {
+
+    line1[i].classList.toggle('cross');
+    line2[i].classList.toggle('hide');
+    line3[i].classList.toggle('cross2');
+    tohide[i].classList.toggle('displayResolutionHide');
+  });
 }
-
-
-
-humburger.addEventListener('click',humburgerToggle);

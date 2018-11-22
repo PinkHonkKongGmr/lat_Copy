@@ -3,32 +3,45 @@
   flex-direction: column;
   width: 31px;height: 31px;
   position: absolute;
-  background: red;
+  z-index: 50;
+  top: -21px;
 }
 
 .humburger {
   padding-top: 10%;
+  display: none;
 }
 
 .line {
   width: 100%;
-  border-top: 3px solid white;
+  border-top: 3px solid #00aa52;
   margin-bottom: 25%;
+  background: #00aa52;
+
 }
 
-.hide {
-  display: none;
-  opacity: 0;
-}
 
 .cross {
   transform: rotate(45deg);
   position: absolute;
-  top: 13px;
+  top: 44px;
+
 }
 
 .cross2 {
   transform: rotate(-45deg);
   position: absolute;
-  top: 13px;
+  top: 44px;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .humburger
+  {display: block;}
+
+  .displayResolutionHide
+  {display: none;}
+
 }
