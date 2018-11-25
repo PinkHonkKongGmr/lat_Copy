@@ -6,7 +6,11 @@ $(function(){
 });
 
 
-function functionName() {
+function red() {
+
+  $(circleCall).animate({
+  		backgroundColor: "red"
+  	}, 2500 );
 
 }
 
@@ -16,10 +20,12 @@ function changeColor() {
   		backgroundColor: "#abcdef"
   	}, 2500 );
 
+    setTimeout(red,2500)
+
 }
 
 function girlyanda() {
-    setInterval(changeColor,20)
+    setInterval(changeColor,5000)
 }
 
 
