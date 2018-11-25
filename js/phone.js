@@ -1,5 +1,13 @@
 var blink;
 var circleCall = document.querySelector('.roundCall');
+var colors = ["#ff6534","#00aa00","#f48634","#8000ff","#8a2be2","#082567","#470027","#4c5866","#ffd700","#ffcf48","#e4a010"];
+
+
+
+function color () {
+  return Math.floor(Math.random() * colors.length)
+}
+
 
 $(function() {
   $(".phone").mask("8(999) 999-99-99");
@@ -8,7 +16,7 @@ $(function() {
 function red() {
 
   $(circleCall).animate({
-    backgroundColor: "#ff6534"
+    backgroundColor: colors[color()]
   }, 2500);
 }
 
@@ -17,7 +25,7 @@ function changeColor() {
   if (blink) {
 
     $(circleCall).animate({
-      backgroundColor: "#00aa00"
+      backgroundColor: colors[color()]
     }, 2500);
     setTimeout(red, 2500)
   }
@@ -26,7 +34,7 @@ function changeColor() {
 function girlyanda() {
 
   $(circleCall).animate({
-    backgroundColor: "#f48634"
+    backgroundColor: colors[color()]
   }, 5000);
   setInterval(changeColor, 5000)
 }
