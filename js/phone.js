@@ -1,4 +1,4 @@
-// var blink;
+var blink;
 var circleCall = document.querySelector('.roundCall');
 
 $(function() {
@@ -33,10 +33,10 @@ function girlyanda() {
 
 
 circleCall.onmouseover = function(e) {
-  // blink = true;
+  blink = true;
   girlyanda();
 }
 
-// circleCall.onmouseout = function(e) {
-//   blink = false;
-// }
+circleCall.onmouseout = function(e) {
+  blink = false;
+}
