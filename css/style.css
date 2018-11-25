@@ -2,19 +2,19 @@ ul {
   list-style: none;
 }
 
-.roundCall
-{
+.roundCall {
   position: fixed;
   width: 50px;
   height: 50px;
   background: #008000;
-  bottom:120px;
+  bottom: 120px;
   right: 60px;
   border-radius: 50%;
 }
-.greenCall
-{background: green;}
 
+.greenCall {
+  background: green;
+}
 
 .fixed-hat {
   padding: 1% 3%;
@@ -561,8 +561,6 @@ ul {
   font-size: 120%;
 }
 
-
-
 .pre-footer_nav {
   display: flex;
   justify-content: space-around;
@@ -677,9 +675,9 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-
-  .upbutton
-  {display: none;}
+  .upbutton {
+    display: none;
+  }
   .guarantees_item p {
     font-size: 120%;
     padding-bottom: 15px;
@@ -731,19 +729,15 @@ footer {
   .fixed-hat_logo, .fixed-hat_items ul {
     display: block;
   }
-.fixed-hat_logo
-{margin-bottom: 5px;}
-
-
+  .fixed-hat_logo {
+    margin-bottom: 5px;
+  }
   .fixed-hat_items ul li {
     margin-bottom: 24.5px;
   }
-
   .fixed-hat_items ul li a::after {
     bottom: 16px;
-
   }
-
   .opinions_item {
     flex-wrap: wrap;
     width: auto;
@@ -779,10 +773,11 @@ footer {
   .promo p {
     font-size: 120%;
   }
-
-  nav
-  {position: relative;min-height: 50px;padding: 3px 20px;}
-
+  nav {
+    position: relative;
+    min-height: 50px;
+    padding: 3px 20px;
+  }
   .pre-footer_nav {
     display: flex;
     flex-direction: column;
@@ -791,12 +786,8 @@ footer {
     opacity: 0.9;
     font-size: 140%;
   }
-
-  footer
-  {
+  footer {
     display: block;
     padding: 10% 23%
   }
-
-
 }
