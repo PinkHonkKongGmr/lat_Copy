@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -11,11 +15,10 @@ ul {
   right: 60px;
   border-radius: 50%;
   display: flex;
-  color:white;
+  color: white;
   font-size: 210%;
   align-items: center;
   justify-content: space-around;
-
 }
 
 .greenCall {
@@ -628,53 +631,67 @@ footer {
   body {
     font-size: 12px;
   }
+
   .fixed-hat {
     flex-wrap: wrap;
     position: relative;
   }
+
   .fixed-hat_items {
     width: 100%;
   }
+
   .fixed-hat_logo {
     justify-content: space-between;
     width: auto;
     margin: auto;
     margin-bottom: 30px
   }
+
   .discription {
     margin-left: 30px;
     padding-top: 15px;
   }
+
   .type_wrapper {
     flex-wrap: wrap;
   }
+
   .guarantees_wrapper {
     flex-wrap: wrap;
   }
+
   .guarantees {
     font-size: 16px;
   }
+
   .guarantees .img_box {
     width: 60%;
     margin: auto;
   }
+
   .guarantees_items {
     width: auto;
     margin: auto;
   }
+
   .guarantees_item {
     justify-content: space-around;
   }
+
   .guarantees_wrapper:nth-child(3) {
     flex-wrap: wrap;
   }
+
   .guarantees_wrapper:nth-child(3) .img_box, .guarantees_wrapper:nth-child(3) .img_box img {
     width: 100%;
   }
+
   .toggler {
     width: 23px;
     height: 23px;
   }
+
   .order_form h2 {
     font-size: 150%;
   }
@@ -684,48 +701,61 @@ footer {
   .upbutton {
     display: none;
   }
+
   .guarantees_item p {
     font-size: 120%;
     padding-bottom: 15px;
   }
+
   .statistic {
     width: auto;
     line-height: 1.6;
   }
+
   .type {
     margin-bottom: 18px;
   }
+
   .statistic p:nth-child(1) {
     font-size: 180%;
   }
+
   .statistic p:nth-child(2) {
     font-size: 155%;
   }
+
   .map {
     margin-bottom: 30px;
   }
+
   .faq_wrapper {
     display: block;
   }
+
   .stock {
     background-position: -110px 0;
   }
+
   .faq_wrapper ul {
     width: auto;
     text-align: left;
   }
+
   .faq_wrapper ul li {
     width: auto;
     min-width: 50%;
     display: inline-block;
   }
+
   .faq_wrapper ul:nth-child(1) {
     margin-bottom: auto;
   }
+
   .faq_wrapper ul li::after {
     opacity: 0.2;
     background: grey;
   }
+
   footer {
     font-size: 70%;
   }
@@ -735,63 +765,81 @@ footer {
   .fixed-hat_logo, .fixed-hat_items ul {
     display: block;
   }
+
   .fixed-hat_logo {
     margin-bottom: 5px;
   }
+
   .fixed-hat_items ul li {
     margin-bottom: 24.5px;
   }
+
   .fixed-hat_items ul li a::after {
     bottom: 16px;
   }
+
   .opinions_item {
     flex-wrap: wrap;
     width: auto;
   }
+
   .opinions_item_img {
     width: 100%;
   }
+
   .opinions_item_img img {
     width: 100%;
   }
+
   .order_form h1 {
     font-size: 80%;
   }
+
   .order_form h3 {
     font-size: 80%;
   }
+
   .order_form h3 {
     font-size: 80%;
   }
+
   .people_item {
     margin-left: 3%;
   }
+
   .people {
     background-position: -31% 0;
   }
+
   .stock {
     padding-left: 3%;
     background-position: 40% 0;
   }
+
   .promo h3 {
     font-size: 200%;
   }
+
   .promo p {
     font-size: 120%;
   }
+
   nav {
     position: relative;
     min-height: 50px;
     padding: 3px 20px;
   }
+
   .pre-footer_nav {
     display: flex;
     flex-direction: column;
   }
+
   .pre-footer_nav li a {
     opacity: 0.9;
     font-size: 140%;
   }
+
   footer {
     display: block;
     padding: 10% 23%
