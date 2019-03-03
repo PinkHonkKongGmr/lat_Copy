@@ -1,53 +1,71 @@
+// группа перемнных для кнопки навигации быстрого скроллинга
 var upbutton = document.querySelector('.upbutton');
-var up = document.querySelector('.up');
+var upSc = document.querySelector('.up');
 var back = document.querySelector('.back');
+// точка, с которой "мотнули" наверх
 var thisPoint;
+// базовая переменная для переключения режимов кнопки быстрого скроллинга
+var scrollSwitch;
+// переменная блокирует скрывание кнопки "вернуться" в момент окончания плавного скролинга наверх
+var saveBack;
+// переменная блокирует скрывание кнопки "вернуться" в триггерный(пересения точки появления\исчезновения)момент плавного скролинга наверх
+var triggerOff;
+// --------------конец группы-----------------------
 
+// БЛОК БЫСТРОГО СКРОЛЛИНГА
+
+// функция отвечает за оторбражение кнопки навигации быстрого скроллинга
 function WhatIsVisible(vis) {
-
-
-  if (vis == 1) {
+  if (vis == "upActive") {
     back.classList.add('hide');
-    up.classList.remove('hide');
+    upSc.classList.remove('hide');
   }
-
-  if (vis == 2) {
+  if (vis == "backActive") {
     back.classList.remove('hide');
-    up.classList.add('hide');
+    upSc.classList.add('hide');
   }
 }
 
-WhatIsVisible(1);
+// по умолчанию, после прохождения триггерной точки отображается "наверх"
+WhatIsVisible("upActive");
 
 window.onscroll = function() {
-  if (window.pageYOffset > 500) {
+  if (window.pageYOffset > 500 && !saveBack) {
     upbutton.classList.remove('hide');
-    check = 0;
-    WhatIsVisible(1);
-
+    scrollSwitch = "up";
+    WhatIsVisible("upActive");
   }
-  if (window.pageYOffset == 0 && check == 0) {
+  if (window.pageYOffset == 0 && scrollSwitch == "up") {
     upbutton.style.opacity = 0;
   }
-  if (window.pageYOffset > 50) {
-    upbutton.style.opacity = 0.9;
+  if (window.pageYOffset > 150) {
+    upbutton.style.opacity = 1;
   }
-}
-
+};
 
 upbutton.onclick = function(e) {
-  if (check == 0) {
+  if (scrollSwitch == "up") {
     thisPoint = window.pageYOffset;
-    up.classList.toggle('hide');
-    window.scrollTo(0, 0);
-    check = 1;
-    WhatIsVisible(2);
-    return true;
-
+    upSc.classList.toggle('hide');
+    triggerOff = false;
+    window.scrollTo({
+      top: 0
+    });
+    scrollSwitch = "down";
+    saveBack = true;
+    setTimeout(function() {
+      WhatIsVisible("backActive");
+      saveBack = false;
+      triggerOff = true;
+      return true;
+    }, 900);
   }
-  if (check == 1) {
-    window.scrollTo(0, thisPoint);
-    WhatIsVisible(1);
+  if (scrollSwitch == "down" && triggerOff) {
+    window.scrollTo({
+      top: thisPoint
+    });
+    WhatIsVisible("upActive");
     return true;
   }
-}
+};
+// КОНЕЦ БЛОКА---------------------------------------------------------------------------
